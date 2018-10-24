@@ -1,0 +1,26 @@
+[
+	{
+		"id":0,
+		"show":"<ul class='col-lg-2'><li><a href='#'>男士箱包</a></li><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":1,
+		"show":"<ul class='col-lg-2'><li><a href='#'>男士服饰</a></li><li><a href='#'>新品</a><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":2,
+		"show":"<ul class='col-lg-2'><li><a href='#'>男鞋</a></li><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>男鞋</a></li><li><a href='#'>新作</a><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":3,
+		"show":"<ul class='col-lg-2'><li><a href='#'>配饰</a></li><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":4,
+		"show":"<ul class='col-lg-2'><li><a href='#'>专题</a></li><li><a href='#'>新作</a></li><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":5,
+		"show":"<ul class='col-lg-2'><a href='#'><img src='images/15281951577029937_165X230.png' alt=''></a><ul>"
+	}
+]

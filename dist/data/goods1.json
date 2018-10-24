@@ -1,0 +1,18 @@
+[
+	{
+		"id":0,
+		"show":"<ul class='col-lg-2 col-lg-offset-2'><li><a href='#'>女士</a></li><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":1,
+		"show":"<ul class='col-lg-2'><li><a href='#'>男士</a></li><li><a href='#'>新品</a><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":2,
+		"show":"<ul class='col-lg-2'><li><a href='#'>特别系列</a></li><li><a href='#'>新作</a></li><li><a href='#'>邮差包</a></li><li><a href='#'>男鞋</a></li><li><a href='#'>新作</a><li><a href='#'>背包</a></li><li><a href='#'>腰包</a></li></ul>"					
+	},
+	{
+		"id":3,
+		"show":"<ul class='col-lg-2'><a href='#'><img src='images/15318441592646147_165X230.jpg' alt=''></a><ul>"
+	}
+]

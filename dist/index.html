@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Gocci</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/index.min.css">
+		<link rel="stylesheet" href="css/buttons.css">
+		<script src = 'js/require.js' async="true" defer data-main = 'js/main'></script>
+	</head>
+	<body>
+	<!-- 头部 -->
+		<header id ="header">
+			<div class="row" id = 'header-top'>
+				<ul class = 'col-lg-3 visible-lg-block' id = 'left'>
+					<li><a href="">中国</a></li>
+					<li><a href="">简体中文</a></li>
+					<li><a href="">客户服务</a></li>
+				</ul>
+				<div class = 'col-lg-6 row' id = 'center'>
+					<div id="menu" class='hidden-lg col-md-2 col-sm-2 col-xs-2'><i class='glyphicon glyphicon-align-justify'></i>  菜单</div>
+					<a href="index.html" class='col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-6  container col-center-block'>
+						<img src="https://res.gucci.cn/images/common/gucci-logo@2x.png" alt="" class="img-responsive center-block">
+					</a>
+					<div id="menu1" class='hidden-lg' id="buybeg1">
+						<span class="glyphicon glyphicon-lock" id="buybeg"></span>
+					</div>
+				</div>
+				<ul class = 'col-lg-3 visible-lg-block' id = 'right'>
+					<li><a href="login.html" id = "login">登陆</a><i class = 'glyphicon glyphicon-heart' id = 'heart'></i></li>
+					<li><a href="" id="buybeg1"><i class = 'glyphicon glyphicon-calendar' id = 'buybeg'></i>购物袋<span id="buybeg-sum" class="sc_num"></span></a></li>
+					<li><input type="text" placeholder="搜索" id = "search"><button class = 'glyphicon glyphicon-search' id="search-button"></button></li>
+				</ul>
+			</div>
+			<ul id = 'header-bottom' class="visible-lg-block">
+				<li><a href="goods.html" id='show'>时装秀</a></li>
+				<li><a href="goodsshow.html" id="lady">女士</a></li>
+				<li><a href="" id="man">男士</a></li>
+				<li><a href="" id='watch'>珠宝和腕表</a></li>
+				<li><a href="" id='ornament'>家饰</a></li>
+				<li><a href="" id='gift'>礼品</a></li>
+				<li><a href="" id='story'>古驰故事</a></li>
+			</ul>
+		<!-- 事件 -->
+			<div id="login-list">
+				<ul>
+					<li>拥有古驰账号您将获得以下权利:</li>
+					<li>保存您的心愿清单</li>
+					<li>个性化您的推荐内容</li>
+					<li>订单寄送追踪及退换货管理</li>
+				</ul>
+				<a href="#" id = 'login-in'>登陆</a>
+				<a href="#" id = 'registe'>注册</a>
+			</div>
+		<!-- 登陆事件 -->
+			<div id='login-page' class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="row">
+					<h1 class="col-lg-10 col-lg-offset-1">登&nbsp;陆</h1>
+					<span id="login-pagespan" class='col-lg-1'>X</span>
+				</div>				
+					<span class='col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>手机号码/电子邮箱</span>
+					<input type="text" class='col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1 ' id="login-txt">
+					<i id="txt-i" class='col-lg-10 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'></i>
+					<span class='col-lg-10 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>密码</span>
+					<input type="password" class='col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-md-offset-1'id='login-pwd'>
+					<i id="pwd-i" class='col-lg-10 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'></i>
+					<span class="class-lg-1 col-lg-offset-4 col-md-3 col-md-offset-5 col-sm-3 col-md-sm-5 col-xs-10 col-xs-offset-1" id="spanlast">登陆</span>
+			</div>
+		<!-- 注册事件 -->
+			<div id='registe-page' class="col-lg-6 hidden-md hidden-sm hidden-xs col-md-6 col-sm-6 col-xs-6">
+				<div class="row">
+					<h1 class="col-lg-10 col-lg-offset-1">创建您的账户</h1>
+					<span id="registe-pagespan" class='col-lg-1'>X</span>
+				</div>				
+					<span class='col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>手机号码</span>
+					<div  class='col-lg-10 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1 '><input type="text" id="registe-txt" placeholder="请输入11位手机号码" class='col-lg-6'></div>
+					<i id="txtI" class='col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'></i>
+					<span class='col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>图形验证码</span>
+					<div class='col-lg-10 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>
+						<input type="text" id='registe-code' placeholder="请输入图中所示验证码" class='col-lg-6'>
+						<div id="code" class='col-lg-2 col-lg-offset-1'></div>
+						<i href="" id='changecode' class='col-lg-2'>换一张</i>
+					</div>
+					<i id="codeI" class='col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'></i>
+					<span class='col-lg-10 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>设置/确认密码</span>
+					<div class='col-lg-10 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'>
+						<input type="password" id='set-pwd'placeholder="至少6个字符含数字大小写" class="col-lg-6">
+						<input type="password" id='confirm-pwd'placeholder="确认密码" class="col-lg-4 col-lg-offset-1">
+					</div>
+					<i id="pwdI" class='col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-6 col-md-sm-3 col-xs-10 col-xs-offset-1'></i>
+					<span class="class-lg-1 col-lg-offset-4 col-md-3 col-md-offset-5 col-sm-3 col-md-sm-5 col-xs-10 col-xs-offset-1" id="create">创建账户</span>
+			</div>
+		<!-- 商品 -->
+			<div id='goods2'>
+				<ul class='col-lg-2' id="lunbo">
+					<li><a href="">手袋</a></li>
+					<li><a href="">2018秋冬系列</a></li>
+					<li><a href="">2018早秋系列</a></li>
+					<li><a href="">2018春夏系列</a></li>
+				</ul>
+				<ul class='col-lg-2' id="lunbo">
+					<li><a href="">服饰</a></li>
+					<li><a href="">2018秋冬系列</a></li>
+					<li><a href="">2018早秋系列</a></li>
+					<li><a href="">2018春夏系列</a></li>
+				</ul>
+				<ul class='col-lg-2' id="lunbo">
+					<li><a href="">女鞋</a></li>
+					<li><a href="">Gucci-Dapper Dan</a></li>
+				</ul>
+				<ul class='col-lg-2' id="lunbo">
+					<li><a href="">配饰</a></li>
+					<li><a href="">2018秋冬系列</a></li>
+					<li><a href="">2018早秋系列</a></li>
+					<li><a href="">2018春夏系列</a></li>
+				</ul>
+				<ul class='col-lg-2' id="lunbo">
+					<li><a href="">专题</a></li>
+					<li><a href="">Gucci-Dapper Dan</a></li>
+				</ul>
+				<div class="play col-lg-2" id="play">
+				    <ol>
+				    	<li class="active">1</li>
+				        <li>2</li>
+				        <li>3</li>
+				        <li>4</li>
+				        <li>5</li>
+				    </ol>
+					<ul>
+						<li><a href="#"><img src="images/15252235136598686_165X230.png" alt="广告一" /></a></li>
+						<li><a href="#"><img src="images/15262602445559576_165X230.png" alt="广告二" /></a></li>
+						<li><a href="#"><img src="images/15262602846977999_165X230.png" alt="广告三" /></a></li>
+						<li><a href="#"><img src="images/15262603105338175_165X230.png" alt="广告四" /></a></li>
+						<li><a href="#"><img src="images/15262603293077433_165X230.png" alt="广告五" /></a></li>
+						<li><a href="#"><img src="images/15252235136598686_165X230.png" alt="广告一" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="goods3">
+				
+			</div>
+		<!-- 购物袋事件 -->
+			<div id='buycar' style="display:none">
+				<p class="p1">购物袋</p>
+				<p class="p">您的购物袋为空</p>
+				<div id="Buylist" style="display:none">
+					<ul id="buylist" style="overflow-y:scroll"></ul>
+					<p class="p2">商品总计<span id="total">￥10000</span></p>
+					<a id="clean" href="">清空购物车</a>
+					<a id="see" href="check.html">查看购物袋</a>
+				</div>
+			</div>
+		</header>
+	<!--nav-->
+		<nav id="nav">
+			<h1 class="col-lg-4 col-lg-offset-4">2019春夏</h1>
+			<h2 class="col-lg-4 col-lg-offset-4">时装秀</h2>
+			<h3 class="col-lg-4 col-lg-offset-4"><a href="">欣赏时装秀</a><a href="">欣赏秀场造型</a></h3>
+			<h4 class="col-lg-3 col-lg-offset-9"><a href="">免费标准配送</a></h4>
+		</nav>
+	<!-- 商品1 -->
+		<div id='shoes' class='container'>
+			<div class='row' id="shoes-top">
+				<div id="shoes-top-left" class='col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2'></div>
+				<div class='col-lg-2 col-lg-offset-1 hidden-xs hidden-sm col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1' id="shoes-top-right">
+					<span class='col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2'>运动鞋</span>
+					<p class='col-lg-8 col-lg-offset-2 visible-lg-block'>从登山运动中汲取灵感，这双靴子将多种材质相结合，充满动感韵律</p>
+					<a href="" class='col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2'>更多</a>
+				</div>
+			</div>
+			<h1 class='col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2'>女鞋</h1>
+			<h2 class='col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2'>Flashtrek系列饰可拆卸水晶运动鞋</h2>
+			<h3 class='col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2'><a href="">点击购买</a></h3>
+		</div>
+	<!-- 尾部 -->
+		<footer id="footer" class="container-fluid">
+			<div class="row" id="footer-top">
+				<div class="col-lg-8 col-md-12" id="left">
+					<ul class="col-lg-3 col-md-3">
+						<li class=" hidden-xs"><a href="">专属服务</a></li>
+						<li><a href="">免费标准配送</a></li>
+						<li><a href="">免费礼品包装</a></li>
+						<li class="hidden-md hidden-xs"><a href=""></a></li>
+						<li><a href="">需要帮助</a></li>
+						<li class=" hidden-xs"><a href=""></a></li>
+						<li class=" hidden-xs"><a href="">联系我们</a></li>
+						<li class=" hidden-xs"><a href="">常见问题</a></li>
+					</ul>
+					<ul class="col-lg-3 col-md-3">
+						<li class="hidden-md hidden-xs"><a href="">购物帮助</a></li>
+						<li><a href="">支付相关</a></li>
+						<li class=" hidden-xs"><a href="">配送</a></li>
+						<li class=" hidden-xs"><a href="">退货</a></li>
+						<li class=" hidden-xs"><a href="">发票</a></li>
+						<li class=" hidden-xs"><a href="">保养与维修</a></li>
+						<li class=" hidden-xs"><a href=""></a></li>
+						<li class=" hidden-xs"><a href=""></a></li>
+					</ul>
+					<ul class="col-lg-3 col-md-3">
+						<li><a href="">关于公司</a></li>
+						<li><a href="">关于GUCCI</a></li>
+						<li class=" hidden-xs"><a href="">GUCCI</a></li>
+						<li class=" hidden-xs"><a href="">职业发展</a></li>
+						<li class=" hidden-xs"><a href="">细则与条款</a></li>
+						<li class=" hidden-xs"><a href="">隐私及COOKIR</a></li>
+						<li class=" hidden-xs"><a href="">企业信息</a></li>
+						<li class=" hidden-xs"><a href=""></a></li>
+					</ul>
+					<ul class="col-lg-3 col-md-3">
+						<li><a href="">关注GUCCI</a></li>
+						<li class=" hidden-xs"><a href="">微信</a></li>
+						<li class=" hidden-xs"><a href="">微博</a></li>
+						<li class=" hidden-xs"><a href="">优酷</a></li>
+						<li class=" hidden-xs"><a href=""></a></li>
+						<li><a href="">在线顾问</a></li>
+						<li><a href="">400-110</a></li>
+						<li class=" hidden-xs"><a href=""></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-12" id="right">
+					<ul class="col-lg-12 col-md-6">
+						<li>订阅GUCCI电子资讯</li>
+						<li class=" hidden-xs">通过订阅，代表您接收<a href="">隐私政策条款</a></li>
+						<li class=" hidden-xs"><input type="text"></li>
+					</ul>
+					<ul class="col-lg-12 col-md-6">
+						<li><a href="">直营店查询</a></li>
+						<li class=" hidden-xs"><input type="text"></li>
+						<li class=" hidden-xs"><a href="">查找其他地区直营店</a></li>
+					</ul>
+				</div>
+			</div>	
+			
+		</footer>
+	</body>
+</html>

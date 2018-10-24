@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body, html {
+  height: 100%; }
+
+#header {
+  background: #1b1b1b;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100; }
+
+#header #header-top {
+  overflow: hidden; }
+
+#header #header-top #center #menu {
+  width: 100px;
+  height: 70px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff; }
+
+#header #header-top #center #menu1 {
+  height: 70px;
+  position: fixed;
+  right: 10px; }
+
+#header #header-top #center #menu1 span {
+  font-size: 12px;
+  height: 70px;
+  color: #fff;
+  line-height: 70px; }
+
+#header #header-top #center a {
+  display: block;
+  height: 25px;
+  margin-top: 15px; }
+
+#header #header-top #center img {
+  display: block;
+  width: 160px;
+  height: 25px; }
+
+#header #header-top ul {
+  height: 16px;
+  margin-top: 20px; }
+
+#header #header-top ul a {
+  color: #E5DFD9;
+  font-weight: 800;
+  text-decoration: none; }
+
+#header #header-top #left li:nth-child(1) {
+  margin-left: 50px; }
+
+#header #header-top #right li:nth-child(1) {
+  margin-left: 50px; }
+
+#header #header-top #right #login:hover #login-list {
+  display: block; }
+
+#header #header-top #right #heart {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #E5DFD9; }
+
+#header #header-top #right #search {
+  width: 50px;
+  margin-right: 10px;
+  border: none;
+  background: #1e1e1e;
+  color: #fff;
+  position: absolute;
+  right: 40px; }
+
+#header #header-top #right #search-button {
+  color: #fff;
+  background: #1b1b1b;
+  border: none;
+  position: fixed;
+  right: 20px;
+  top: 23px; }
+
+#header #header-top li {
+  float: left;
+  margin: 0 5px 0 5px; }
+
+#header #header-bottom {
+  height: 50px; }
+
+#header #header-bottom li {
+  float: left;
+  margin: 0 15px 0 15px; }
+
+#header #header-bottom li a {
+  color: #E5DFD9;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 38px; }
+
+#header #header-bottom li a:hover {
+  border-bottom: 2px solid #fff; }
+
+#header #header-bottom li:nth-child(1) {
+  margin-left: 350px; }
+
+#header #login-list {
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  border: 1px solid #87827e;
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px; }
+
+#header #login-list ul {
+  width: 280px;
+  margin: 10px 0 0 10px; }
+
+#header #login-list ul li:nth-child(1) {
+  color: black;
+  font-size: 14px; }
+
+#header #login-list ul li {
+  color: #87827e;
+  font-size: 12px;
+  margin-top: 5px; }
+
+#header #login-list a {
+  display: block;
+  width: 276px;
+  height: 36px;
+  border: 2px solid black;
+  line-height: 36px;
+  text-align: center;
+  margin: 15px 0 0 10px;
+  background: black;
+  text-decoration: none;
+  color: #fff; }
+
+#header #login-list #login-in:hover {
+  background: #1b1b1b; }
+
+#header #login-list #registe {
+  background: #fff;
+  color: black; }
+
+#header #login-list #registe:hover {
+  border: 2px solid #eee;
+  color: #eee; }
+
+#header #buycar {
+  width: 300px;
+  background: #fff;
+  border: 1px solid #87827e;
+  position: absolute;
+  top: 35px;
+  right: 10px; }
+
+#header #buycar .p1 {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #eee; }
+
+#header #buycar #buylist {
+  width: 298px;
+  height: 300px;
+  background: #e7e7e7; }
+
+#header #buycar .p {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-size: 18px; }
+
+#header #buycar .p2 {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee; }
+
+#header #buycar .p2 #total {
+  font-size: 18px;
+  margin-left: 50px; }
+
+#header #buycar a {
+  display: block;
+  width: 276px;
+  height: 36px;
+  border: 2px solid black;
+  line-height: 36px;
+  text-align: center;
+  margin: 15px 0 0 10px;
+  background: black;
+  text-decoration: none;
+  color: #fff; }
+
+#header #buycar #clean:hover {
+  background: #1b1b1b; }
+
+#header #buycar #see {
+  background: #fff;
+  color: black;
+  margin-bottom: 10px; }
+
+#header #buycar #see:hover {
+  border: 2px solid #eee;
+  color: #eee; }
+
+#header #login-page {
+  height: 400px;
+  display: none;
+  position: fixed;
+  background: #fff;
+  left: 25%;
+  top: 120px;
+  z-index: 120; }
+
+#header #login-page #login-pagespan {
+  float: right;
+  font-size: 18px; }
+
+#header #login-page h1 {
+  text-align: center;
+  color: #1b1b1b;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
+
+#header #login-page span, #header #login-page i, #header #login-page input {
+  margin-bottom: 10px;
+  font-size: 12px; }
+
+#header #login-page i {
+  color: red; }
+
+#header #login-page input {
+  height: 30px; }
+
+#header #login-page #spanlast {
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  background: black;
+  text-align: center; }
+
+#header #registe-page {
+  position: fixed;
+  background: #fff;
+  display: none;
+  left: 25%;
+  top: 120px;
+  z-index: 120; }
+
+#header #registe-page #registe-pagespan {
+  float: right;
+  font-size: 18px; }
+
+#header #registe-page h1 {
+  text-align: center;
+  color: #1b1b1b;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
+
+#header #registe-page span, #header #registe-page i, #header #registe-page input {
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 10px 0 10px 0; }
+
+#header #registe-page i {
+  color: red;
+  text-align: center; }
+
+#header #registe-page #code {
+  background: blue;
+  text-align: center;
+  padding: 10px 0 10px 0; }
+
+#header #registe-page #create {
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  background: black;
+  text-align: center; }
+
+#header #goods-menu, #header #goods2 {
+  width: 100%;
+  background: #eee;
+  position: fixed;
+  display: none; }
+
+#header #goods2 #lunbo a {
+  color: #9b737c;
+  display: block; }
+
+#header #goods2 #lunbo li:nth-child(1) a {
+  color: black;
+  font-weight: 900;
+  display: block;
+  padding: 5px; }
+
+#header #goods2 #play {
+  position: relative;
+  height: 230px;
+  overflow: hidden; }
+
+#header #goods2 #play ol {
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  z-index: 2; }
+
+#header #goods2 #play ol li {
+  float: left;
+  margin-right: 3px;
+  display: inline;
+  cursor: pointer;
+  background: #fcf2cf;
+  border: 1px solid #f47500;
+  padding: 2px 6px;
+  color: #d94b01;
+  font-family: arial;
+  font-size: 12px; }
+
+#header #goods2 #play ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+#header #goods2 #play ul li {
+  float: left; }
+
+#header #goods3 {
+  width: 100%;
+  background: #eee;
+  position: fixed;
+  display: block; }
+
+#header #goods3 a {
+  color: #9b737c;
+  display: block;
+  padding: 5px; }
+
+#header #goods3 li:nth-child(1) a {
+  color: black;
+  font-weight: 900;
+  display: block; }
+
+#nav {
+  background: orange;
+  overflow: hidden;
+  background: url(../images/e06e-hezpzwu2943332.jpg) fixed center center no-repeat;
+  background-size: cover; }
+
+#nav h1 {
+  margin-top: 250px; }
+
+#nav h1, #nav h2, #nav h3, #nav h4 {
+  text-align: center; }
+
+#nav h3 a {
+  background: black;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 15px 10px 15px;
+  margin-right: 10px;
+  text-decoration: none; }
+
+#nav h4 a {
+  text-decoration: none;
+  color: #fff; }
+
+#shoes {
+  overflow: hidden;
+  background: #e7e7e7; }
+
+#shoes #shoes-top #shoes-top-left {
+  background: url(../images/15375262574345483_content_DarkGray_ProductPush_Standard_700x.png) center center no-repeat;
+  background-size: cover;
+  height: 500px; }
+
+#shoes #shoes-top #shoes-top-right {
+  background: url(../images/15375262574342351_content_LightGray_Vignette_Standard_80x80_.jpg) no-repeat #fff center top;
+  margin-top: 150px; }
+
+#shoes #shoes-top #shoes-top-right span {
+  margin-top: 100px;
+  font-size: 16px;
+  text-align: center; }
+
+#shoes #shoes-top #shoes-top-right p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px; }
+
+#shoes #shoes-top #shoes-top-right a {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px; }
+
+#shoes h1 {
+  font-size: 12px;
+  text-align: center; }
+
+#shoes h2 {
+  font-size: 16px;
+  text-align: center; }
+
+#shoes h3 {
+  text-align: center; }
+
+#shoes h3 a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background: black;
+  padding: 5px; }
+
+#footer {
+  background: #1b1b1b;
+  margin-bottom: 0; }
+
+#footer #footer-top #left ul {
+  margin-top: 50px; }
+
+#footer #footer-top #left li:nth-child(1) a {
+  color: #807d7a;
+  margin-bottom: 15px; }
+
+#footer #footer-top #left ul:nth-child(1) li:nth-child(5) a {
+  color: #807d7a;
+  display: block; }
+
+#footer #footer-top #left ul li {
+  margin-top: 5px; }
+
+#footer #footer-top #left ul li a {
+  color: #fff;
+  height: 16px;
+  display: block; }
+
+#footer #footer-top #right ul {
+  margin-top: 50px; }
+
+#footer #footer-top #right li:nth-child(1) {
+  color: #807d7a;
+  margin-bottom: 15px; }
+
+#footer #footer-top #right li {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 5px; }
+
+#footer #footer-top #right li a {
+  color: #807d7a; }
+
+#showing {
+  background: #e7e7e7;
+  overflow: hidden; }

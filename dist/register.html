@@ -1,0 +1,50 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>注册系统</title> 
+<style type="text/css"> 
+ 
+  form{color:#999;font-weight: 900;font-size: 14px} 
+  #username{margin-left:50px;margin-top:70px;}
+    #password{margin-left:63px;margin-top:20px;}
+    #assertpassword{margin-left:35px;margin-top:20px;}
+    .button{width:100px;height:30px;border-radius: 5px;background: #0082c3;border:0px;margin-left:253px;margin-top:30px;display: block;float:left;text-align: center;color:white;text-indent: 0px;}
+    input{background:#eee;height:20px;border:0;outline:none;text-indent: 10px;font-weight: 900;color:#0082c3;}
+</style> 
+</head> 
+<body style="background: #0082c3"> 
+  <a href="index.html" style="padding:10px;background:black;color:#fff;position:fixed;">返回首页</a>
+  <div style="width:400px;height:300px;background: white;margin:auto;border-radius: 10px;margin-top:140px">
+  <form action="register.php" method="post" name="form_register"
+    onsubmit="return check()"> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名:<input style="width:230px;border-radius: 5px;" type="text" name="username" id="username"><br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码:<input style="width:230px;border-radius: 5px;" type="password" name="password" id="password"><br> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;确认密码:<input style="width:230px;border-radius: 5px;" type="password" name="assertpassword" id="assertpassword"> 
+    <input class="button" type="submit" value="确认注册"> 
+  
+  </form> 
+  </div>
+  <script type="text/javascript"> 
+    function check() { 
+      var username=document.getElementById("username").value; 
+      var password=document.getElementById("password").value; 
+      var assertpassword=document.getElementById("assertpassword").value; 
+      var regex=/^[/s]+$/; 
+        
+      if(regex.test(username)||username.length==0){ 
+        alert("用户名格式不对"); 
+        return false; 
+      } 
+      if(regex.test(password)||password.length==0){ 
+        alert("密码格式不对"); 
+        return false;     
+      } 
+      if(password!=assertpassword){ 
+        alert("两次密码不一致"); 
+        return false; 
+      } 
+    } 
+  </script> 
+</body> 
+</html> 
